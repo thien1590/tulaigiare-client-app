@@ -1,0 +1,18 @@
+def NAME = "cordova-plugin-background-fetch"
+
+def libDir = "${projectDir}/libs"
+
+File capacitorConfig = new File("${projectDir}/../../capacitor.config.json")
+
+if (capacitorConfig.exists()) {
+  // Capacitor app
+  libDir = "${projectDir}/../../node_modules/${NAME}/src/android/libs"
+  println("[${NAME}] Capacitor detected")
+}
+
+println("[${NAME}] libDir: ${libDir}")
+
+dependencies {
+    // Load tsbackgroundfetch.aar
+    implementation fileTree(include: ['*.aar'], dir: "${libDir}/tsbackgroundfetch")
+}

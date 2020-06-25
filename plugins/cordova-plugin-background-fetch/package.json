@@ -1,0 +1,75 @@
+{
+  "_from": "cordova-plugin-background-fetch@~6.0.8",
+  "_id": "cordova-plugin-background-fetch@6.0.8",
+  "_inBundle": false,
+  "_integrity": "sha512-JtmGJz2ZwzqLnbFoz6ULwcIL1JT1UVTP3Uv5SVvfPAq9k3ROHeP8FFjhS6FH2v8xZpnxfzMfmfQu9keXDQahZA==",
+  "_location": "/cordova-plugin-background-fetch",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "cordova-plugin-background-fetch@~6.0.8",
+    "name": "cordova-plugin-background-fetch",
+    "escapedName": "cordova-plugin-background-fetch",
+    "rawSpec": "~6.0.8",
+    "saveSpec": null,
+    "fetchSpec": "~6.0.8"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-background-fetch/-/cordova-plugin-background-fetch-6.0.8.tgz",
+  "_shasum": "f00a5381fc9f6cf1b3772b1ebd0f9c7a99305690",
+  "_spec": "cordova-plugin-background-fetch@~6.0.8",
+  "_where": "/Users/xuxu/Projects/tulaigiare-client-app",
+  "author": {
+    "name": "Chris Scott, Transistor Software",
+    "email": "chris@transistorsoft.com"
+  },
+  "bugs": {
+    "url": "https://github.com/transistorsoft/react-native-background-fetch/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-background-fetch",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "A plugin to periodically awaken your app in the background every 15 minutes to perform some work.",
+  "engines": {
+    "cordovaDependencies": {
+      "5.4.0": {
+        "cordova": ">=7.1.0",
+        "cordova-android": ">=7.0.0",
+        "cordova-ios": ">=4.4.0"
+      },
+      "<5.4.0": {
+        "cordova": ">=6.4.0",
+        "cordova-android": ">=6.0.0",
+        "cordova-ios": ">=4.3.0"
+      }
+    }
+  },
+  "homepage": "https://github.com/transistorsoft/react-native-background-fetch",
+  "keywords": [
+    "cordova",
+    "background",
+    "fetch"
+  ],
+  "license": "MIT",
+  "main": "./src/typescript/index.js",
+  "name": "cordova-plugin-background-fetch",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transistorsoft/cordova-plugin-background-fetch.git"
+  },
+  "scripts": {
+    "build": "tsc -p src/typescript",
+    "prepublish": "npm run build"
+  },
+  "types": "./src/typescript/index.d.ts",
+  "version": "6.0.8"
+}

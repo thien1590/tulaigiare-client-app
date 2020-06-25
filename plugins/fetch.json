@@ -158,5 +158,21 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-background-geolocation-lt": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-background-geolocation-lt@3.7.0"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-background-fetch": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-background-fetch@~6.0.8"
+        },
+        "is_top_level": false,
+        "variables": {}
     }
 }
