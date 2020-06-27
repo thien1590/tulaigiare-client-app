@@ -602,6 +602,94 @@ module.exports = [
             "navigator.notification",
             "navigator"
         ]
+    },
+    {
+        "file": "plugins/cordova-plugin-file-transfer/www/FileTransferError.js",
+        "id": "cordova-plugin-file-transfer.FileTransferError",
+        "pluginId": "cordova-plugin-file-transfer",
+        "clobbers": [
+            "window.FileTransferError"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-file-transfer/www/FileTransfer.js",
+        "id": "cordova-plugin-file-transfer.FileTransfer",
+        "pluginId": "cordova-plugin-file-transfer",
+        "clobbers": [
+            "window.FileTransfer"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-file-transfer/www/browser/FileTransfer.js",
+        "id": "cordova-plugin-file-transfer.BrowserFileTransfer",
+        "pluginId": "cordova-plugin-file-transfer",
+        "clobbers": [
+            "window.FileTransfer"
+        ]
+    },
+    {
+        "file": "plugins/cordova-background-geolocation-lt/www/BackgroundGeolocation.js",
+        "id": "cordova-background-geolocation-lt.BackgroundGeolocation",
+        "pluginId": "cordova-background-geolocation-lt",
+        "clobbers": [
+            "window.BackgroundGeolocation"
+        ]
+    },
+    {
+        "file": "plugins/cordova-background-geolocation-lt/www/API.js",
+        "id": "cordova-background-geolocation-lt.API",
+        "pluginId": "cordova-background-geolocation-lt"
+    },
+    {
+        "file": "plugins/cordova-background-geolocation-lt/www/DeviceSettings.js",
+        "id": "cordova-background-geolocation-lt.DeviceSettings",
+        "pluginId": "cordova-background-geolocation-lt"
+    },
+    {
+        "file": "plugins/cordova-background-geolocation-lt/www/Logger.js",
+        "id": "cordova-background-geolocation-lt.Logger",
+        "pluginId": "cordova-background-geolocation-lt"
+    },
+    {
+        "file": "plugins/cordova-background-geolocation-lt/www/TransistorAuthorizationToken.js",
+        "id": "cordova-background-geolocation-lt.TransistorAuthorizationToken",
+        "pluginId": "cordova-background-geolocation-lt"
+    },
+    {
+        "file": "plugins/cordova-background-geolocation-lt/src/browser/BackgroundGeolocationMock.js",
+        "id": "cordova-background-geolocation-lt.BackgroundGeolocationMock",
+        "pluginId": "cordova-background-geolocation-lt",
+        "runs": true
+    },
+    {
+        "file": "plugins/cordova-plugin-bg-geolocation/www/background-mode.js",
+        "id": "cordova-plugin-bg-geolocation.BackgroundMode",
+        "pluginId": "cordova-plugin-bg-geolocation",
+        "clobbers": [
+            "cordova.plugins.backgroundMode",
+            "plugin.backgroundMode"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-mauron85-background-geolocation/www/BackgroundGeolocation.js",
+        "id": "cordova-plugin-mauron85-background-geolocation.BackgroundGeolocation",
+        "pluginId": "cordova-plugin-mauron85-background-geolocation",
+        "clobbers": [
+            "BackgroundGeolocation"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-mauron85-background-geolocation/www/radio.js",
+        "id": "cordova-plugin-mauron85-background-geolocation.radio",
+        "pluginId": "cordova-plugin-mauron85-background-geolocation"
+    },
+    {
+        "file": "plugins/cordova-plugin-background-fetch/www/BackgroundFetch.js",
+        "id": "cordova-plugin-background-fetch.BackgroundFetch",
+        "pluginId": "cordova-plugin-background-fetch",
+        "clobbers": [
+            "window.BackgroundFetch"
+        ]
     }
 ];
 module.exports.metadata = 
@@ -626,7 +714,11 @@ module.exports.metadata =
     "cordova-plugin-splashscreen": "3.2.2",
     "cordova-plugin-statusbar": "2.1.3",
     "cordova-plugin-vibration": "2.1.6",
-    "cordova-plugin-whitelist": "1.2.2"
+    "cordova-plugin-whitelist": "1.2.2",
+    "cordova-background-geolocation-lt": "3.7.0",
+    "cordova-plugin-bg-geolocation": "0.0.1",
+    "cordova-plugin-mauron85-background-geolocation": "3.0.1",
+    "cordova-plugin-background-fetch": "6.0.8"
 }
 // BOTTOM OF METADATA
 });

@@ -61,37 +61,26 @@ var app = {
         /**
          * This callback will be executed every time a geolocation is recorded in the background.
          */
-        // var backgroundGeolocation = cordova.require('cordova/plugin/BackgroundGeolocation');
+        var backgroundGeolocation = window.BackgroundGeolocation;
         var callbackFn = function(location) {
             console.log('[js] BackgroundGeolocation callback:  ' + location.latitude + ',' + location.longitude);
+            var data = JSON.stringify({
+                "device_info": JSON.stringify(device),
+                "geo_info": 'dont know',
+                "long": location.longitude,
+                "lat": location.latitude,
+            });
+            var xhr = new XMLHttpRequest();
+            xhr.withCredentials = true;
 
-            // Do your HTTP request here to POST location to your server.
-            // jQuery.post(url, JSON.stringify(location));
-
-                var data = JSON.stringify({
-                    "device_info": JSON.stringify(device),
-                    "geo_info": 'dont know',
-                    "long": location.longitude,
-                    "lat": location.latitude,
-                });
-                var xhr = new XMLHttpRequest();
-                xhr.withCredentials = true;
-
-                xhr.addEventListener("readystatechange", function() {
-                    if(this.readyState === 4) {
-                        alert('test send: ' + device.uuid);
-                    }
-                });
-
-                xhr.open("POST", "http://dinhvi.tulaigiare.vn/api/geo/"+device.uuid);
-                xhr.setRequestHeader("Content-Type", "application/json");
-                xhr.send(data);
-
-            /*
-            IMPORTANT:  You must execute the finish method here to inform the native plugin that you're finished,
-            and the background-task may be completed.  You must do this regardless if your HTTP request is successful or not.
-            IF YOU DON'T, ios will CRASH YOUR APP for spending too much time in the background.
-            */
+            xhr.addEventListener("readystatechange", function() {
+                if(this.readyState === 4) {
+                    alert('test send: ' + device.uuid);
+                }
+            });
+            xhr.open("POST", "http://dinhvi.tulaigiare.vn/api/geo/"+device.uuid);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.send(data);
             backgroundGeolocation.finish();
         };
 
