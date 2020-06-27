@@ -400,6 +400,28 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "clobbers": [
         "window.FileTransfer"
       ]
+    },
+    {
+      "id": "cordova-plugin-mauron85-background-geolocation.BackgroundGeolocation",
+      "file": "plugins/cordova-plugin-mauron85-background-geolocation/www/BackgroundGeolocation.js",
+      "pluginId": "cordova-plugin-mauron85-background-geolocation",
+      "clobbers": [
+        "BackgroundGeolocation"
+      ]
+    },
+    {
+      "id": "cordova-plugin-mauron85-background-geolocation.radio",
+      "file": "plugins/cordova-plugin-mauron85-background-geolocation/www/radio.js",
+      "pluginId": "cordova-plugin-mauron85-background-geolocation"
+    },
+    {
+      "id": "cordova-plugin-bg-geolocation.BackgroundMode",
+      "file": "plugins/cordova-plugin-bg-geolocation/www/background-mode.js",
+      "pluginId": "cordova-plugin-bg-geolocation",
+      "clobbers": [
+        "cordova.plugins.backgroundMode",
+        "plugin.backgroundMode"
+      ]
     }
   ];
   module.exports.metadata = {
@@ -414,6 +436,8 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-device-orientation": "1.0.7",
     "cordova-plugin-dialogs": "1.2.1",
     "cordova-plugin-file": "6.0.2",
-    "cordova-plugin-file-transfer": "1.5.1"
+    "cordova-plugin-file-transfer": "1.5.1",
+    "cordova-plugin-mauron85-background-geolocation": "3.0.1",
+    "cordova-plugin-bg-geolocation": "0.0.1"
   };
 });

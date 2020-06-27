@@ -35,6 +35,9 @@
     <feature name="FileTransfer">
         <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
     </feature>
+    <feature name="BackgroundGeolocation">
+        <param name="android-package" value="com.tenforwardconsulting.bgloc.cordova.BackgroundGeolocationPlugin" />
+    </feature>
     <name>tulaigiare-client-app</name>
     <description>
         Hello World sample application that responds to the deviceready event.
