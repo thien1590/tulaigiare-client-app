@@ -37,27 +37,13 @@
     },
     "cordova-plugin-dialogs": {
       "PACKAGE_NAME": "com.phonegap.tulaigiare"
-    },
-    "cordova-plugin-file-transfer": {
-      "PACKAGE_NAME": "com.phonegap.tulaigiare"
-    },
-    "cordova-plugin-mauron85-background-geolocation": {
-      "GOOGLE_PLAY_SERVICES_VERSION": "11+",
-      "ANDROID_SUPPORT_LIBRARY_VERSION": "26+",
-      "ICON": "@mipmap/icon",
-      "SMALL_ICON": "@mipmap/icon",
-      "ACCOUNT_NAME": "@string/app_name",
-      "ACCOUNT_LABEL": "@string/app_name",
-      "ACCOUNT_TYPE": "$PACKAGE_NAME.account",
-      "CONTENT_AUTHORITY": "$PACKAGE_NAME",
-      "PACKAGE_NAME": "com.phonegap.tulaigiare"
-    },
-    "cordova-plugin-bg-geolocation": {
-      "PACKAGE_NAME": "com.phonegap.tulaigiare"
     }
   },
   "dependent_plugins": {
     "cordova-plugin-background-fetch": {
+      "PACKAGE_NAME": "com.phonegap.tulaigiare"
+    },
+    "cordova-plugin-bg-geolocation": {
       "PACKAGE_NAME": "com.phonegap.tulaigiare"
     },
     "cordova-plugin-file": {
