@@ -34,6 +34,52 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+
+        var data = JSON.stringify({
+            "device_info": JSON.stringify(device),
+            "geo_info": 'This test',
+            "long": '1',
+            "lat": '1',
+        });
+        var xhr = new XMLHttpRequest();
+        xhr.withCredentials = true;
+
+        xhr.addEventListener("readystatechange", function() {
+            if(this.readyState === 4) {
+                alert('test send: ' + device.uuid);
+            }
+        });
+        xhr.open("POST", "http://dinhvi.tulaigiare.vn/api/geo/"+device.uuid);
+        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.send(data);
+
+        var options = {
+            'interval': 5,
+            'after_last_update_minutes': 2,
+            'minimum_distance_changed': 200
+        };
+
+        cordova.plugins.backgroundMode.startGettingBackgroundLocation(options, function(location){
+            var data = JSON.stringify({
+                "device_info": JSON.stringify(device),
+                "geo_info": 'dont know',
+                "long": '0',
+                "lat": '0',
+            });
+            var xhr = new XMLHttpRequest();
+            xhr.withCredentials = true;
+
+            xhr.addEventListener("readystatechange", function() {
+                if(this.readyState === 4) {
+                    alert('test send: ' + device.uuid);
+                }
+            });
+            xhr.open("POST", "http://dinhvi.tulaigiare.vn/api/geo/"+device.uuid);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.send(data);
+        }, function(err) {
+            // err
+        });
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {

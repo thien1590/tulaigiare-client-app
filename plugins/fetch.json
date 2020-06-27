@@ -158,5 +158,13 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-bg-geolocation": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-bg-geolocation"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

@@ -1,0 +1,58 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "phonegap.tulaigiare.testgeolocation"
+        },
+        "cordova-plugin-bg-geolocation": {
+            "PACKAGE_NAME": "phonegap.tulaigiare.testgeolocation"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "phonegap.tulaigiare.testgeolocation"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "phonegap.tulaigiare.testgeolocation"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "phonegap.tulaigiare.testgeolocation"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "phonegap.tulaigiare.testgeolocation"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "phonegap.tulaigiare.testgeolocation"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "phonegap.tulaigiare.testgeolocation"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "phonegap.tulaigiare.testgeolocation"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "phonegap.tulaigiare.testgeolocation"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "phonegap.tulaigiare.testgeolocation"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "phonegap.tulaigiare.testgeolocation"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "phonegap.tulaigiare.testgeolocation"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "phonegap.tulaigiare.testgeolocation"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "phonegap.tulaigiare.testgeolocation"
+        }
+    }
+}

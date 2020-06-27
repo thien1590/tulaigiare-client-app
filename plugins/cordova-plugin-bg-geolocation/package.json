@@ -1,0 +1,66 @@
+{
+  "_from": "cordova-plugin-bg-geolocation",
+  "_id": "cordova-plugin-bg-geolocation@0.0.1",
+  "_inBundle": false,
+  "_integrity": "sha512-iWfz4x5CPqJcr/3Qjq5aBslnCFEjgcR+Gh7HSWlcs6fQAIPU5Ga2vVMLfHcVCmL0tcwWcAwRRiwX1/P5NdhdDg==",
+  "_location": "/cordova-plugin-bg-geolocation",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-bg-geolocation",
+    "name": "cordova-plugin-bg-geolocation",
+    "escapedName": "cordova-plugin-bg-geolocation",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-bg-geolocation/-/cordova-plugin-bg-geolocation-0.0.1.tgz",
+  "_shasum": "8695f7430ccf23e976e9430010e5ed77d32da481",
+  "_spec": "cordova-plugin-bg-geolocation",
+  "_where": "/Users/xuxu/Projects/TEST BG Geolocation",
+  "author": {
+    "name": "Anuj Raghuvanshi"
+  },
+  "bugs": {
+    "url": "https://github.com/Anuj-Raghuvanshi/cordova-plugin-bg-geolocation/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-bg-geolocation",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "deprecated": false,
+  "description": "Prevent apps from going to sleep in background while using location.",
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    },
+    {
+      "name": "android-sdk",
+      "version": ">=16"
+    }
+  ],
+  "homepage": "https://github.com/Anuj-Raghuvanshi/cordova-plugin-bg-geolocation#readme",
+  "keywords": [
+    "Anuj Raghuvanshi",
+    "background",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android",
+    "cordova-browser"
+  ],
+  "name": "cordova-plugin-bg-geolocation",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anuj-Raghuvanshi/cordova-plugin-bg-geolocation.git"
+  },
+  "version": "0.0.1"
+}
